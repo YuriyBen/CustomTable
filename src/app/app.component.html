@@ -1,0 +1,15 @@
+<div>
+  <custom-table
+    [columnDefinitions]="columnDefinitions"
+    [rowData]="rowData"
+    [defaultOptions]="defaultOptions"
+    [tableApi]="tableApi"
+    (tableReady)="onTableReady($event)"
+    (cellValueChanged)="onCellValueChanged($event)"
+    (cellClicked)="onCellClicked($event)"
+    (rowResized)="onRowResized($event)"
+    (columnSorted)="onColumnSorted($event)"
+  ></custom-table>
+</div>
+
+<!-- <div class="export" (click)="exportToCsv()">Export</div> -->
